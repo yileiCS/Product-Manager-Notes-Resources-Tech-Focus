@@ -6,10 +6,9 @@
   - [学习网站 / Learning Sites](#学习网站--learning-sites)
   - [软件工具 / Software Tools](#软件工具--software-tools)
   - [书籍 / Books](#书籍--books)
-  - [产品思维建构](#产品思维建构)
   - [产品思维建构 / Product Thinking Framework](#产品思维建构--product-thinking-framework)
     - [核心思维模型 / Core Thinking Models](#核心思维模型--core-thinking-models)
-      - [用户体验五要素模型 / Five Elements of User Experience](#用户体验五要素模型--five-elements-of-user-experience)
+      - [用户体验五要素模型](#用户体验五要素模型)
       - [产品分析框架 / Product Analysis Framework](#产品分析框架--product-analysis-framework)
       - [产品决策思维 / Product Decision Making](#产品决策思维--product-decision-making)
       - [产品生命周期管理 / Product Lifecycle Management](#产品生命周期管理--product-lifecycle-management)
@@ -19,20 +18,13 @@
   - [必懂技术知识 / Essential Technical Knowledge](#必懂技术知识--essential-technical-knowledge)
     - [API接口基础 / API Interface Fundamentals](#api接口基础--api-interface-fundamentals)
     - [12个大模型性能指标 / 12 Key AI Model Performance Metrics](#12个大模型性能指标--12-key-ai-model-performance-metrics)
-      - [1. BLEU (Bilingual Evaluation Understudy) / 双语评估替补](#1-bleu-bilingual-evaluation-understudy--双语评估替补)
-      - [2. ROUGE (Recall-Oriented Understudy for Gisting Evaluation) / 面向召回的要点评估替补](#2-rouge-recall-oriented-understudy-for-gisting-evaluation--面向召回的要点评估替补)
-      - [3. Perplexity / 困惑度](#3-perplexity--困惑度)
-      - [4. F1 Score / F1分数](#4-f1-score--f1分数)
-      - [5. Recall@K / K值召回率](#5-recallk--k值召回率)
-      - [6. AUC (Area Under Curve) / 曲线下面积](#6-auc-area-under-curve--曲线下面积)
-      - [7. ROC (Receiver Operating Characteristic) / 接收者操作特征曲线](#7-roc-receiver-operating-characteristic--接收者操作特征曲线)
-      - [8. 精确率 / Precision](#8-精确率--precision)
-      - [9. 召回率 / Recall (Sensitivity)](#9-召回率--recall-sensitivity)
-      - [10. Top-1/Top-5 Accuracy / Top-1/Top-5准确率](#10-top-1top-5-accuracy--top-1top-5准确率)
-      - [11. Latency / 延迟](#11-latency--延迟)
-      - [12. QPS (Queries Per Second) / 每秒查询数](#12-qps-queries-per-second--每秒查询数)
     - [其他重要技术概念 / Other Important Technical Concepts](#其他重要技术概念--other-important-technical-concepts)
-  - [核心术语表 / Glossary](#核心术语表--glossary)
+  - [云计算领域](#云计算领域)
+    - [云计算基础](#云计算基础)
+      - [4种服务模型](#4种服务模型)
+    - [云上人工智能与机器学习](#云上人工智能与机器学习)
+    - [架构](#架构)
+  - [术语表 / Glossary](#术语表--glossary)
 
 ---
 
@@ -84,13 +76,10 @@
 | 工具名称 / Tool Name                                                                                                                                | 说明 / Explanation                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [GitHub](https://github.com/)                                                                                                                       | 代码托管与开源社区，查找产品/AI项目 / Code hosting and open source community, find product/AI projects |
-| [Notion](https://www.notion.so/) / [飞书](https://www.feishu.cn/) / [石墨文档](https://shimo.im/)                                                   | 产品文档与团队协作工具 / Product documentation and team collaboration tools                            |
 | [Notion](https://www.notion.so/) / [飞书](https://www.feishu.cn/) / [石墨文档](https://shimo.im/) / [Jira](https://www.atlassian.com/software/jira) | 产品文档与团队协作工具 / Product documentation and team collaboration tools                            |
-| [Axure](https://www.axure.com/) / [Figma](https://www.figma.com/) / [Sketch](https://www.sketch.com/)                                               | 原型设计与界面设计工具 / Prototyping and interface design tools                                        |
 | [Axure](https://www.axure.com/) / [Figma](https://www.figma.com/) / [墨刀](https://modao.cc/) / [Sketch](https://www.sketch.com/)                   | 原型设计与界面设计工具 / Prototyping and interface design tools                                        |
 | [Visual Paradigm](https://www.visual-paradigm.com/) / [Draw.io](https://app.diagrams.net/)                                                          | 系统建模与架构图工具 / System modeling and architecture diagram tools                                  |
 | [Tableau](https://www.tableau.com/) / [PowerBI](https://powerbi.microsoft.com/)                                                                     | 数据可视化分析工具 / Data visualization and analysis tools                                             |
-| [LangChain](https://www.langchain.com/)                                                                                                             | 大语言模型应用开发框架 / Large language model application development framework                        |  |
 | [阿里云百炼](https://bailian.aliyun.com/) / [LangChain](https://www.langchain.com/)                                                                 | AI开发与模型平台 / AI development and model platform                                                   |
 
 ---
@@ -109,18 +98,42 @@
 | 从0到1 / Zero to One                           | 创业与创新思维 / Entrepreneurship and innovation thinking              |
 
 ---
-##  产品思维建构
 
 ## 产品思维建构 / Product Thinking Framework
 
 ### 核心思维模型 / Core Thinking Models
 
-#### 用户体验五要素模型 / Five Elements of User Experience
-- **战略层 / Strategy Layer**: 产品目标与用户需求的统一 / Alignment of product goals and user needs
-- **范围层 / Scope Layer**: 功能规格与内容需求定义 / Definition of functional specifications and content requirements  
-- **结构层 / Structure Layer**: 交互设计与信息架构 / Interaction design and information architecture
-- **框架层 / Skeleton Layer**: 界面设计与导航设计 / Interface design and navigation design
-- **表现层 / Surface Layer**: 视觉设计与感知体验 / Visual design and sensory experience
+#### 用户体验五要素模型
+
+- **战略层**: 产品目标与用户需求的统一
+  - **使用场景**: 产品立项、目标制定、用户画像建立
+  - **具体应用**: 制定产品愿景、分析用户需求、确定商业目标
+  - **产出物**: 产品策略文档、用户画像、商业目标
+
+- **范围层**: 功能规格与内容需求定义
+  - **使用场景**: PRD撰写、功能规划、需求优先级排序
+  - **具体应用**: 确定MVP功能、内容策略规划、功能清单梳理
+  - **产出物**: 产品需求文档(PRD)、功能清单、内容规范
+
+- **结构层**: 交互设计与信息架构
+  - **使用场景**: 产品架构设计、用户流程规划、信息层级设计
+  - **具体应用**: 绘制用户旅程图、设计信息架构图、规划交互流程
+  - **产出物**: 信息架构图、用户流程图、交互设计规范
+
+- **框架层**: 界面设计与导航设计
+  - **使用场景**: 原型设计、页面布局、导航体系构建
+  - **具体应用**: 制作低保真原型、设计页面框架、规划导航结构
+  - **产出物**: 线框图、原型图、导航架构图
+
+- **表现层**: 视觉设计与感知体验
+  - **使用场景**: UI设计、品牌视觉、用户测试
+  - **具体应用**: 设计视觉风格、制定设计规范、进行可用性测试
+  - **产出物**: 高保真原型、设计规范、测试报告
+
+**实际应用示例**:
+- **电商App设计**: 从确定商业目标→规划商品功能→设计购物流程→制作界面原型→完善视觉设计
+- **SaaS产品规划**: 从分析企业用户需求→定义核心功能模块→设计操作流程→构建界面框架→优化用户界面
+- **移动应用改版**: 从重新定义用户目标→调整功能范围→重构信息架构→优化界面布局→升级视觉体验
 
 #### 产品分析框架 / Product Analysis Framework
 - **市场分析 / Market Analysis**: 
@@ -245,72 +258,72 @@
 
 ### 12个大模型性能指标 / 12 Key AI Model Performance Metrics
 
-#### 1. BLEU (Bilingual Evaluation Understudy) / 双语评估替补
+**BLEU (Bilingual Evaluation Understudy) / 双语评估替补**
 - **定义**: 机器翻译质量评估指标，通过比较机器翻译与人工翻译的n-gram重叠度
 - **范围**: 0-1或0-100，数值越高表示翻译质量越好
 - **应用场景**: 机器翻译、文本生成、对话系统
 
-#### 2. ROUGE (Recall-Oriented Understudy for Gisting Evaluation) / 面向召回的要点评估替补
+**ROUGE (Recall-Oriented Understudy for Gisting Evaluation) / 面向召回的要点评估替补**
 - **定义**: 文本摘要质量评估指标，包括ROUGE-N、ROUGE-L、ROUGE-W等变体
 - **核心指标**: 召回率、精确率、F1值
 - **应用场景**: 自动摘要、文本生成、新闻标题生成
 
-#### 3. Perplexity / 困惑度
+**Perplexity / 困惑度**
 - **定义**: 衡量语言模型预测能力的指标，表示模型对测试数据的"困惑"程度
 - **计算公式**: PPL = 2^(-1/N * Σlog₂P(wᵢ))
 - **特点**: 数值越低表示模型性能越好
 - **应用场景**: 语言模型评估、文本生成质量评估
 
-#### 4. F1 Score / F1分数
+**F1 Score / F1分数**
 - **定义**: 精确率和召回率的调和平均数
 - **计算公式**: F1 = 2 × (Precision × Recall) / (Precision + Recall)
 - **范围**: 0-1，数值越高表示模型性能越好
 - **应用场景**: 分类任务、信息检索、命名实体识别
 
-#### 5. Recall@K / K值召回率
+**Recall@K / K值召回率**
 - **定义**: 在推荐系统中，前K个推荐结果中正确项目的比例
 - **计算方式**: 正确推荐数量 / 总相关项目数量
 - **常用K值**: K=5, 10, 20, 50, 100
 - **应用场景**: 推荐系统、搜索排序、信息检索
 
-#### 6. AUC (Area Under Curve) / 曲线下面积
+**AUC (Area Under Curve) / 曲线下面积**
 - **定义**: ROC曲线下的面积，衡量二分类模型的整体性能
 - **范围**: 0-1，0.5表示随机猜测，1表示完美分类
 - **优势**: 不受类别不平衡影响
 - **应用场景**: 二分类问题、异常检测、风险评估
 
-#### 7. ROC (Receiver Operating Characteristic) / 接收者操作特征曲线
+**ROC (Receiver Operating Characteristic) / 接收者操作特征曲线**
 - **定义**: 以假正率为横轴，真正率为纵轴的性能曲线
 - **组成要素**: TPR (True Positive Rate) vs FPR (False Positive Rate)
 - **用途**: 选择最佳分类阈值
 - **应用场景**: 医疗诊断、安全检测、质量控制
 
-#### 8. 精确率 / Precision
+**精确率 / Precision**
 - **定义**: 预测为正类的样本中实际为正类的比例
 - **计算公式**: Precision = TP / (TP + FP)
 - **范围**: 0-1，数值越高表示误报率越低
 - **应用场景**: 垃圾邮件检测、医疗诊断、内容审核
 
-#### 9. 召回率 / Recall (Sensitivity)
+**召回率 / Recall (Sensitivity)**
 - **定义**: 实际正类样本中被正确预测的比例
 - **计算公式**: Recall = TP / (TP + FN)
 - **范围**: 0-1，数值越高表示漏报率越低
 - **应用场景**: 疾病筛查、安全检测、信息检索
 
-#### 10. Top-1/Top-5 Accuracy / Top-1/Top-5准确率
+**Top-1/Top-5 Accuracy / Top-1/Top-5准确率**
 - **Top-1**: 模型预测的第一个结果与真实标签匹配的准确率
 - **Top-5**: 模型预测的前5个结果中包含真实标签的准确率
 - **特点**: Top-5通常比Top-1准确率更高
 - **应用场景**: 图像分类、语音识别、自然语言理解
 
-#### 11. Latency / 延迟
+**Latency / 延迟**
 - **定义**: 从输入请求到输出结果的时间间隔
 - **测量单位**: 毫秒(ms)、微秒(μs)
 - **关键指标**: 平均延迟、P95/P99延迟、首字延迟(TTFT)
 - **影响因素**: 模型大小、硬件性能、网络带宽、并发量
 - **应用场景**: 实时推理、在线服务、用户体验优化
 
-#### 12. QPS (Queries Per Second) / 每秒查询数
+**QPS (Queries Per Second) / 每秒查询数**
 - **定义**: 系统每秒能处理的请求数量
 - **相关概念**: TPS (Transactions Per Second)、RPS (Requests Per Second)
 - **影响因素**: 硬件配置、模型复杂度、缓存策略、负载均衡
@@ -326,12 +339,35 @@
 - **内存占用**: 模型运行时的显存或内存消耗
 
 ---
+## 云计算领域
+### 云计算基础
+#### 4种服务模型
 
-<a name="核心术语表-glossary"></a>
+| 对比维度       | **IaaS**<br/>Infrastructure as a Service<br/>基础设施即服务                         | **PaaS**<br/>Platform as a Service<br/>平台即服务          | **SaaS**<br/>Software as a Service<br/>软件即服务                     | **FaaS**<br/>Function as a Service<br/>函数即服务/无服务器计算                            |
+| -------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **核心概念**   | 提供最基础的计算资源：虚拟机、存储、网络、防火墙等                                  | 提供完整的开发、测试、部署和运维平台，无需管理底层基础设施 | 提供完整可用的、通过互联网访问的应用程序                              | 无需关心服务器，只需上传事件驱动的功能代码，按实际执行时间收费                            |
+| **用户责任**   | 安装和维护操作系统、中间件、运行时环境、应用程序及数据                              | 开发和部署应用程序，管理应用程序数据                       | 几乎为零，只需使用软件并管理用户和数据权限                            | 编写单个的函数逻辑                                                                        |
+| **云厂商责任** | 管理底层物理硬件、虚拟化层、网络和存储的可用性                                      | 管理操作系统、运行时、中间件及所有底层基础设施             | 管理一切：从应用程序、数据到最底层基础设施                            | 动态分配管理运行函数所需的一切计算资源、执行环境、扩缩容                                  |
+| **典型例子**   | • AWS EC2<br/>• Azure Virtual Machines<br/>• Google Compute Engine<br/>• 阿里云 ECS | • Heroku<br/>• Google App Engine<br/>• Azure App Service   | • Salesforce<br/>• Gmail/Outlook<br/>• Microsoft 365<br/>• Zoom/Slack | • AWS Lambda<br/>• Azure Functions<br/>• Google Cloud Functions                           |
+| **适用场景**   | 需要完全控制操作系统和运行环境；自定义软件迁移上云；混合云部署                      | 应用程序开发部署；希望提升开发效率；不想操心基础设施运维   | 使用现成的通用软件应用满足业务需求：办公、客服、营销等                | 事件驱动场景：文件处理、API后端、计划任务、实时数据流处理等瞬时性、无状态、高弹性工作负载 |
 
-## 核心术语表 / Glossary
+### 云上人工智能与机器学习
+- AIaaS（AI as a Service）
+- 预构建AI API
+- 大语言模型
+- MLOps
 
-| 中文术语/英文术语 / Term                                             | 含义说明 / Explanation                                                                                               |
+### 架构
+- 核心架构概念与产品决策
+- Serverless 架构
+
+
+---
+<a name="术语表-glossary"></a>
+
+## 术语表 / Glossary
+
+| 术语/ / Term                                                         | 含义说明 / Explanation                                                                                               |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | 1-click Review & Publish / 1-click 审核发布                          | One-click process for content review and publishing / 一键式内容审核和发布流程                                       |
 | A100*8                                                               | Configuration of 8 NVIDIA A100 GPUs for AI computing / 8张英伟达A100 GPU的AI计算配置                                 |
