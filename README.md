@@ -26,6 +26,14 @@
     - [SDK](#sdk)
   - [其他重要技术概念 / Other Important Technical Concepts](#其他重要技术概念--other-important-technical-concepts)
     - [12个大模型性能指标 / 12 Key AI Model Performance Metrics](#12个大模型性能指标--12-key-ai-model-performance-metrics)
+  - [Managing Platform Products](#managing-platform-products)
+    - [Platform Product Management: An Overview](#platform-product-management-an-overview)
+    - [Principles for Building Great Platforms](#principles-for-building-great-platforms)
+    - [Platform Design](#platform-design)
+    - [Managing Platform Product Organizations](#managing-platform-product-organizations)
+    - [Common Issues with Platforms and How to Overcome Them](#common-issues-with-platforms-and-how-to-overcome-them)
+    - [Platforms of the Future](#platforms-of-the-future)
+    - [Three things to remember about platform product management](#three-things-to-remember-about-platform-product-management)
   - [云计算领域](#云计算领域)
     - [云计算基础](#云计算基础)
       - [4种服务模型](#4种服务模型)
@@ -542,6 +550,519 @@ A PM should:
 - **应用场景**: 系统性能评估、容量规划、SLA制定
 
 ---
+## Managing Platform Products
+Reference: [Managing Platform Products](https://www.linkedin.com/learning/managing-platform-products/what-is-platform-product-management?resume=false&u=69919578)
+
+### Platform Product Management: An Overview
+
+- **What is platform product management?**
+
+  - **Key Definition:**
+    - Platform product management is about **building capabilities that other apps can be built upon**
+
+  - **Three Types of Product Management Comparison:**
+
+  | Type                          | Audience                                        | Use Case            | Characteristics                                  | Time Horizon           | Examples                  |
+  | ----------------------------- | ----------------------------------------------- | ------------------- | ------------------------------------------------ | ---------------------- | ------------------------- |
+  | Consumer Product Management   | One audience                                    | One use case        | Design oriented, data rich, iterative focus      | Real-time/short-term   | TikTok, Instagram         |
+  | Enterprise Product Management | Organizations (businesses, government, schools) | Workflow completion | Less data available, organizational goals focus  | Medium-term            | Salesforce, Slack         |
+  | Platform Product Management   | Multiple users, customers, partners             | Multiple use cases  | Building underlying capabilities, much less data | Long-term (1-3+ years) | APIs, Salesforce platform |
+
+  - **Key Platform Characteristics:**
+    - Serving **multiple users, multiple use cases**
+    - Building **underlying capabilities that power multiple product teams**
+    - **Longer time horizon** - can take over two years to build
+    - **Multi-decade abstractions** thinking (Stripe example)
+    - Building around **needs that will not change** for long periods
+
+**Why you should not platformize**
+
+- **Charlie Munger's "Thinking through inversion" approach**
+
+- **Key Risks of Platformizing:**
+  - **Costly upfront investment** - can delay development of other key features
+  - **Ongoing maintenance tax** on the organization
+  - **Increase risk surface-area** of products
+  - **Difficult to isolate cause and effect impact** of specific changes
+  - **Governance and process requirements** can feel like overhead
+  - **Security vulnerabilities** with third-party developers
+  
+- **Critical Decision Question:**
+  - Will the capability serve **multiple use cases in the foreseeable future**?
+  - If not, a platform may not be the right choice
+
+**Benefits of building and using platforms**
+
+- **Three Main Benefits:**
+  - **Leverage**
+     - Ability to **reuse technology in multiple contexts**
+     - Taking existing capabilities and applying to different business lines
+  - **Velocity**
+     - **Move faster** by leveraging existing platforms
+     - Don't build functionality from scratch
+     - Reduce time to build products
+  - **Innovation**
+     - **Combinatorial innovation** - combining multiple assets to build something new
+     - Example: Google Maps + crime data = crime mapping
+     - **Generative AI** as exciting new platform capability
+
+**Articulating the success of a platform**
+- **Ways to Measure Platform Value:**
+  - **Leverage Measurement:**
+    - **Adoption** - how much is the platform being used
+    - Multiple use cases adoption
+    - "You know a platform is successful when people start to take it for granted" - Dan Reed
+  - **Velocity Measurement:**
+    - **Developer surveys** - comparing build time before vs after platform
+    - Example: 6 months → 3 weeks build time
+    - **Tooling around developer velocity**
+  - **Innovation Measurement:**
+    - **Bottom line impact** - revenue, engagement
+    - **Causal inference studies** - adoption relationship to business impact
+    - **Direct revenue** if charging for platform
+    - **Customer productivity improvements**
+
+### Principles for Building Great Platforms
+
+- **Trust above everything in your platform**
+
+**Key Definition:**
+- **Trust = Consistency over time** (Jeff Weiner, LinkedIn former CEO)
+
+**Why Trust is Critical:**
+- **Entire businesses** can be built on platform capabilities
+- Platform must be **reliable, predictable** in inputs/outputs
+- **Data security** and **backwards compatibility** essential
+- "**Measure twice, cut once**" - don't move fast and break things
+
+**Consequences of Lost Trust:**
+- Data breaches and privacy issues
+- **Brand and reputation damage**
+- **Business risk** including fines and penalties
+- Loss of partner confidence
+
+**Actionable Trust Framework:**
+- **Rigorous testing** and playbooks/runbooks
+- **Post-mortem and retros** for critical issues
+- **Legal team evaluation** of platform capabilities
+- **Continuous improvement** from incidents
+
+**Self-service platforms**
+
+- **Definition:**
+  - Ability to **integrate without talking to another human**
+  - No changes needed on platform codebase
+  - **Complete autonomy** in platform connection
+  
+- **Three Components of Self-Service:**
+  - **Outside-in design**
+     - Think about **external customers/consumers**
+     - **Don't overfit for one use case**
+     - Consider all potential integrators
+  - **Documentation**
+     - **Onboarding guides, tutorials, examples**
+     - **Technical writing** as core experience component
+     - **Any question should be answerable** via documentation
+     - Both **technical and non-technical audiences**
+     - Reduces **"time to hello world"**
+  - **Consistent communication**
+     - **Change logs/release notes** on regular cadence
+     - **Roadshows** - evangelizing long-term roadmap and value
+     - **Monthly releases** with associated notes
+
+**Ecosystem value in your platform**
+
+- **Bill Gates Quote:**
+  - "A platform is when the **economic value of the partners around a platform exceed the value of the company** that created it"
+
+- **Key Concept:**
+  - Building **constellation of applications** around platform
+  - Each application creates **their own value**
+  - **Ecosystem thinking** across spectrum of use cases
+
+- **Prioritization Approach:**
+  - Start with **vision, mission, and strategy**
+  - Clear view of **ideal future state**
+  - **Strategy and principles** guide roadmap priorities
+  - Stay **open to new ideas** as platform evolves
+
+- **Platform Evolution:**
+  - Platforms are **not static**
+  - Build **fundamental capabilities** for future
+  - **Adapt** as you learn and gain insights
+  - **Cannot anticipate all future innovation**
+
+**Long-term thinking in your platform**
+- **Key Concepts:**
+  - **"10x thinking"** (Google), **"long-term thinking"** (Amazon), **"dream big"** (LinkedIn)
+  - **Multi-decade abstractions**
+  - Think about **complex use cases** in the future
+  - Build **underlying capabilities that will last**
+- **Flexibility in Long-term Thinking:**
+  - Have the **vision** for 5-7+ years future state
+  - Build **milestones** toward that state
+  - **Willing to adapt** as you learn and technology evolves
+  - **Adjust ideal state** along the journey
+- **MVP Approach for Platforms:**
+  - **Minimum Viable Platform** (not just minimum viable product)
+  - Start with **ideal state design**
+  - Identify **riskiest parts** (technical, adoption, regulatory)
+  - First milestone should **de-risk** the most challenging aspects
+- **Mega Project Management:**
+  - **Premortem approach** - imagine failure and identify risks
+  - **Risk reduction process** throughout project
+  - **Operational meetings** focused on risk mitigation
+  - **Psychological safety** for sharing risks
+  - **Regular retros** for continuous improvement
+
+### Platform Design
+**APIs and platforms**
+- **API Definition:**
+  - **Application Programming Interface**
+  - Enable **connections between software products**
+  - **Data exchange and actions**
+  - Like **"bumps on Lego brick"** - joining pieces together
+
+- **API Components:**
+  - **Inputs** - data passed to API (always required vs optional)
+  - **Outputs** - information returned to requester
+  - **Endpoints** - areas where information is taken in and sent
+  - **API interface** - defining inputs and outputs
+
+- **API Structure:**
+  - **Front end** - user interface
+  - **Backend** - where programs take action
+  - **APIs** - connect front end and backend
+
+- **API + Documentation = Self-service**
+
+**SDKs and platforms**
+
+- **SDK Definition:**
+  - **Software Development Kit**
+  - **Set of tools** for easier platform integration
+  - **Toolbox** with ready-to-use capabilities
+- **SDK Components:**
+  - **Libraries** - shortcuts instead of long code blocks
+  - **Debuggers** - find issues in code
+  - **Code samples** - examples for guidance
+  - **Testing tools** - ensure everything works
+- **API vs SDK Usage:**
+  - **API** - bring in capability from platform
+  - **SDK** - building entire application from scratch
+  - **SDK makes API easier** to interface with
+- **Value of SDKs:**
+  - Supports **self-service principle**
+  - **Drive adoption** and keep partners long-term
+  - **Built once, used by everyone**
+
+**Permissions in platforms**
+- **Purpose:**
+  - **Control who can access** platform data and functionality
+  - **Stop bad actors** from accessing sensitive data
+  - **Different levels of access** (read-only, read-write)
+  - **Authorized parties only**
+- **Importance:**
+  - **Security breaches prevention**
+  - **Government regulation compliance** (GDPR, HIPAA, CCPA)
+  - **Trust maintenance** with users
+  - **Clear rules** for platform usage
+- **Benefits when done correctly:**
+  - **Build new products quickly**
+  - **Similar permissioning approaches** reusable
+  - **Clarity** on future product possibilities
+
+**Writing platform requirements**
+
+- **PRD Template Structure:**
+
+- **Section 1: Team and Sign-off**
+  - **RAPID framework** for roles and responsibilities
+  - **Reviewer's table** with status tracking
+  - Clear **points of contact** and responsibilities
+
+- **Section 2: Context**
+  - **"Why You Should Care"** paragraph
+  - **Minimum necessary information** for understanding
+  - **Linked to larger strategy** and business goals
+
+- **Section 3: Requirements (Main Section)**
+  - **Table organization** by related groups
+  - Four components per requirement:
+    - **Title** (e.g., Wi-Fi lookup)
+    - **User story** (first-person from user perspective)
+    - **Priority** (P0 = must have)
+    - **Acceptance criteria** (numbered list of individual requirements)
+
+- **Acceptance Criteria Example:**
+  - Specific, testable requirements
+  - **Error codes** for platform teams
+  - **Clear outcomes and processes**
+  - Use as **checklist/test plan**
+
+### Managing Platform Product Organizations
+
+**Platform governance: Centralization vs. autonomy**
+
+- **Governance Definition:**
+  - **Automated process** and/or **group of individuals**
+  - **Uphold standards, principles, and guidelines**
+  - Balance **control vs autonomy**
+
+- **Key Decisions:**
+  - **Naming conventions**
+  - **Open, closed, or vetted programs**
+  - **Team responsibilities** for capabilities
+  - **Standards definition**
+  - **Centralized vs individual team decisions**
+  - **Security implications**
+
+- **Governance Spectrum:**
+
+  | Centralized Governance                      | Decentralized Governance                     |
+  | ------------------------------------------- | -------------------------------------------- |
+  | Central team maintains control              | Community of users/developers make decisions |
+  | Defines strategy, pricing, access, features | More autonomy in hands of community          |
+  | Optimizes for holistic experience           | Can lead to fragmentation                    |
+  | Less autonomy for teams                     | More innovation and creativity               |
+
+- **Key Takeaway:**
+  - **Ongoing topic** requiring attention to organizational needs
+  - **Balance** depends on platform needs at given time
+
+**Roles and responsibilities for platform-specific R&D organizations**
+- **Key Platform Roles:**
+  - **API Product Manager**
+     - **Vision, strategy, prioritization, roadmap**
+     - **Hub of the wheel** bringing together stakeholders
+     - **Full psychological responsibility** for API success
+  - **API Designer**
+     - **Design API interfaces** (inputs and outputs)
+     - Create **easy-to-use APIs** with significant value
+  - **Technical Writers**
+     - **Technical documentation** for developers
+     - Enable **self-service integration**
+     - **Content development** without human interaction needed
+  - **Business Development and API Evangelists**
+     - **Build partnerships** in ecosystem
+     - **Drive product adoption**
+     - **Create mutual value** for joint customers
+     - **Treasure trove of ecosystem insights**
+  - **Developer Relations Team**
+     - **Support third-party developers**
+     - **Demos, tutorials, materials**
+     - **API experts** and **first point of contact**
+
+**Horizontal vs. vertical teams in relation to platforms**
+  - **Team Types:**
+
+    | Horizontal Platform Teams     | Vertical Feature Teams                       |
+    | ----------------------------- | -------------------------------------------- |
+    | Create value across ecosystem | Deliver specific features for targeted users |
+    | Lead overall platform         | Build and deliver features on roadmap        |
+    | Define standards              | Have autonomy for their use cases            |
+    | Provide shared services       | Focus on specific user needs                 |
+    | Example: Google Maps          | Example: DoorDash                            |
+  - **Healthy Tension:**
+    - **Horizontal teams** inspire from vertical needs
+    - **Vertical teams** may request platform-level features
+    - **Redundant functionality** identification for leverage
+    - **Clear strategy, scope, principles** guide decisions
+
+### Common Issues with Platforms and How to Overcome Them
+
+**Why it's difficult to measure the impact of platforms**
+
+- **Measurement Challenges:**
+  - **Cannot AB test** like consumer products
+  - **Performance metrics** (query volume, latency) not best value proxies
+  - **Different value articulation** needed
+
+- **Better Value Measures:**
+  - **Velocity**
+    - **Developer surveys** - time comparison before/after platform
+    - How long to develop features previously vs currently
+  - **Developer Craft**
+    - **Easier development processes**
+    - **Test coverage, uptime, availability**
+    - **Bug severity and resolution time**
+    - **Architecture scalability**
+  - **Adoption**
+    - **Platform integration measurement**
+    - **Percentage of customers using partner plugins**
+    - **Developer growth funnel**: visits → time to value → partner integration → value creation → satisfaction (CSAT)
+
+**Building generalized capabilities in your platform**
+
+- **Challenge:**
+  - **Multiple sets of users and problems**
+  - **Identify underlying capabilities/opportunities**
+  - **Look at larger universe of problems**
+  - **Pull out common threads**
+
+- **Approach:**
+  - **Understand vision/ideal state** of applications
+  - **Platform user story**: "As a platform consumer, I want capability, so that value"
+  - **Identify common sub-features**
+  - **Look for repeated product experiences** built from ground up
+
+- **Key Questions:**
+  - What are the **common features** throughout ecosystem?
+  - What are the **most complex use cases** platform might serve in future?
+
+**Heavy dependency on systems thinking in platforms**
+
+- **Goal:**
+  - **"People start to take it for granted"** (Dan Reid quote)
+  - **Deep ecosystem knowledge** required
+  - **Neatly plug into** existing tech stack
+
+- **Three Tips for Systems Understanding:**
+  - **Follow smallest piece of data/information**
+     - Track movement throughout ecosystem
+     - Note all system interactions and customer touchpoints
+  - **Document platform architecture**
+     - **Tech docs** for self-service
+     - Full-time employees may write these
+     - **Consult throughout development**
+  - **Consult experts**
+     - **Technical leads** and **systems architects**
+     - Guide through platform understanding process
+
+**Cultivating a platform culture**
+
+- **Four Approaches to Culture Change:**
+  - **Strategy**
+     - **Articulate what to change and why**
+     - Ideally **in writing**
+  - **Top-down approach**
+     - **Senior leadership** behind culture change
+     - **CEO involvement** can be powerful
+  - **Bottom-up approach**
+     - **Grassroots leaders** support
+     - **Individual contributor PMs** backing the idea
+  - **Incentive system**
+     - **Build incentives** to encourage desired behavior
+     - **Platform-specific incentive systems**
+
+- **Implementation:**
+  - **Not necessarily all in parallel**
+  - **Start where most impact/traction** possible
+  - **Experiment** with different approaches
+  - **All approaches eventually useful** combined
+
+- **Actionable Example - Incentive System:**
+  - Traditional PM incentives: **quick A/B tests**, **quarterly impact**
+  - Platform PM needs: **multi-year projects**, **milestone completions**, **long-term thinking**
+  - **Design incentive systems** that encourage platform PM success
+
+### Platforms of the Future
+
+- **Best-in-class platforms today**
+  - **Leading Platform Companies:**
+  - **Stripe:**
+    - **Online payment processing** platform
+    - **User-friendly, highly customizable**
+    - **$640 billion processed** in 2021
+    - Customers: Amazon, Google, Instacart, Lyft
+  - **Salesforce:**
+    - **CRM software** gold standard
+    - **Complete suite**: sales, marketing automation, analytics
+    - **AppExchange** - vast third-party integrations
+    - **150,000+ customers**: IBM, Mercedes-Benz, GE
+  - **Amazon Web Services (AWS):**
+    - **Cloud computing** industry leader
+    - **Wide range of services**: computing, storage, database, application development
+    - **Reliability, scalability, security**
+    - Customers: Disney, Samsung, US government
+
+**Cloud computing as a platform of the future**
+  - **Evolution:**
+    - **Alternative to on-premises computing**
+    - Now **default choice** for businesses
+    - **Flexibility and scalability** driving demand  
+  - **Enabling Technologies:**
+    - **Mobile apps**
+    - **Internet of Things (IoT) devices**
+    - **AI and machine learning models**
+    - **Impossible to run on premises**  
+  - **Advantages:**
+    - **Faster time to market**
+    - **Improved collaboration**
+    - **Greater scalability and flexibility**
+    - **Cost savings**  
+  - **Future:**
+    - **Quantum computing** possibilities
+    - **Fastest growing applications** are cloud-based
+    - **Continue to be prominent** platform type
+
+**Payments: Web3 and blockchains as a platform of the future**
+  - **Blockchain Characteristics:**
+    - **Decentralized and transparent** systems of record
+    - **Complete transparency** in network movement
+    - **View code, applications, and services**
+  - **Benefits:**
+    - **Decentralized applications (dApps)**
+    - **Secure, transparent, tamper-proof**
+    - **Distributed network** = more secure
+    - **Operate autonomously and transparently**
+    - **New business models** and monetization
+  - **Popular Use Cases:**
+    - **Payments**
+       - **Cross-border money movement**
+       - **No centralized entity fees**
+    - **Gaming**
+       - **Items transferable** between games
+       - **Profit from game ownership**
+  - **Challenges:**
+    - **Bad actors** damaging public opinion
+    - **Trust issues** slowing adoption
+    - **Regulatory concerns**
+  - **Platform Companies:**
+    - Alchemy, Consensus, Coinbase
+    - **Popular blockchains**: Bitcoin, Ethereum, Polygon
+
+**Generative AI as a platform of the future**
+  - **Technology Drivers:**
+    - **Deep learning algorithms** and **neural networks**
+    - **Increasing data availability**
+    - **Powerful cloud computing systems**
+  - **Applications:**
+    - **Content creation**: images, videos, audio
+    - **Product design** based on specifications
+    - **Software development co-pilot**
+    - **Design consultant** for mocks
+    - **Teaching advisors** for lesson plans
+  - **Industry Applications:**
+    - **Natural language processing**
+    - **Healthcare**: synthetic medical images, drug interaction simulation
+    - **Finance**
+  - **Challenges:**
+    - **Model bias** leading to unfair outputs
+    - **Ethical implications** in certain situations
+    - **Hallucinations** - false statements with authority
+  - **Impact:**
+    - **Transform content creation**
+    - **Change product design**
+    - **New business designs**
+    - **Platform PM must consider long-term implications**
+
+
+### Three things to remember about platform product management
+
+- **Three Key Benefits:**
+  - **Leverage** - build capability and **reuse in multiple contexts**
+  - **Velocity** - enable **entire R&D organization to move faster**
+  - **Innovation** - create **net new products** that never existed before
+
+- **Key Principles:**
+  - **Trust as highest priority**
+  - **Ecosystem thinking** surrounding platform
+  - **Long-term vision** for platform direction
+
+- **Remember:** Platform success comes from building capabilities that power multiple use cases while maintaining trust and enabling innovation across the ecosystem.
+
+---
 ## 云计算领域
 ### 云计算基础
 #### 4种服务模型
@@ -619,6 +1140,7 @@ A PM should:
 | Data Validation / 数据校验                                           | Process of checking data accuracy and completeness / 检查数据准确性和完整性的过程                                         |
 | DAU Growth / DAU增长                                                 | Daily Active User growth metrics and strategies / 日活跃用户增长指标和策略                                                |
 | DAU/MAU（Daily/Monthly Active User） / 日活/月活跃用户数             | 日活/月活跃用户数 / Daily/Monthly active user count                                                                       |
+| dApps / 去中心化应用                                                 | Decentralized applications built on blockchain technology / 基于区块链技术构建的去中心化应用程序                          |
 | Deep Learning (DL) / 深度学习                                        | 基于神经网络的机器学习方法 / Machine learning method based on neural networks                                             |
 | Deployment / 部署                                                    | Releasing products or services to production environment / 将产品或服务发布到生产环境                                     |
 | DevOps                                                               | Development and operations integration / 开发与运维一体化                                                                 |
