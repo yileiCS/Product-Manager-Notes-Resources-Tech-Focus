@@ -6,7 +6,12 @@
   - [学习网站 / Learning Sites](#学习网站--learning-sites)
   - [软件工具 / Software Tools](#软件工具--software-tools)
   - [书籍 / Books](#书籍--books)
+  - [产品生命周期 Product Development Lifecycel](#产品生命周期-product-development-lifecycel)
+  - [利用AI搭建产品思路 Use AI for Product Built](#利用ai搭建产品思路-use-ai-for-product-built)
+    - [提示词示例 Prompt Examples](#提示词示例-prompt-examples)
+    - [需要思考的问题 Questions to Consider](#需要思考的问题-questions-to-consider)
   - [产品思维建构 / Product Thinking Framework](#产品思维建构--product-thinking-framework)
+    - [Understand the User](#understand-the-user)
     - [核心思维模型 / Core Thinking Models](#核心思维模型--core-thinking-models)
       - [用户体验五要素模型](#用户体验五要素模型)
       - [产品分析框架 / Product Analysis Framework](#产品分析框架--product-analysis-framework)
@@ -15,19 +20,22 @@
       - [商业模式思考 / Business Model Thinking](#商业模式思考--business-model-thinking)
       - [敏捷产品开发思维 / Agile Product Development Thinking](#敏捷产品开发思维--agile-product-development-thinking)
       - [跨功能协作思维 / Cross-functional Collaboration Thinking](#跨功能协作思维--cross-functional-collaboration-thinking)
+    - [How can quantify a product's success? / 如何量化产品的成功](#how-can-quantify-a-products-success--如何量化产品的成功)
   - [必懂技术知识 / Essential Technical Knowledge](#必懂技术知识--essential-technical-knowledge)
     - [API接口基础 / API Interface Fundamentals](#api接口基础--api-interface-fundamentals)
+    - [SDK](#sdk)
+  - [其他重要技术概念 / Other Important Technical Concepts](#其他重要技术概念--other-important-technical-concepts)
     - [12个大模型性能指标 / 12 Key AI Model Performance Metrics](#12个大模型性能指标--12-key-ai-model-performance-metrics)
-    - [其他重要技术概念 / Other Important Technical Concepts](#其他重要技术概念--other-important-technical-concepts)
   - [云计算领域](#云计算领域)
     - [云计算基础](#云计算基础)
       - [4种服务模型](#4种服务模型)
     - [云上人工智能与机器学习](#云上人工智能与机器学习)
     - [架构](#架构)
   - [术语表 / Glossary](#术语表--glossary)
+  - [面试准备](#面试准备)
+      - [关键词](#关键词)
 
 ---
-
 
 ## 技能与知识储备 / Skills & Knowledge
 
@@ -98,8 +106,85 @@
 | 从0到1 / Zero to One                           | 创业与创新思维 / Entrepreneurship and innovation thinking              |
 
 ---
+## 产品生命周期 Product Development Lifecycel
+- **Ideate**: Idea generation
+  - Steps:
+    - Walk through main use case
+    - Evaluate current solutions
+    - Explain pain points
+    - Create new solution to solve problem and address pain points
+  - Product Development Requirements:
+    - Research
+    - Identify your customers
+      - Understand their needs
+      - Determine what they want
+      - What their pain points are
+      - Find what's holding them back
+"A lot of times, people don't know what they want until you show it to them". ———— Steve Jobs
+- **Research and Defien**
+  - Find product market fit
+  - Product Questions
+  - Is this the right time for this product to launch?
+  - What differentiates our product from the competition?
+  - Why would customers choose our product over competitors?
+  - What channels are most effective in acquiring new users?
+  - Based on feedback and data, what areas need improvement?
+- **Build**
+  - Come up with the MVP for what you want to achieve
+    - Minimum working version of a product
+    - Maximum learnings
+- **Test and Analyze**
+  - Allow your team to test your product before it's available to the public
+  - Set expectations with engineers
+  - Assess the feasibility and viability
+  - Predict user impact and trade-offs
+  - Assess whether it's worth investing more resources and effort on the proposed prototype
+  - Make sure to have a roadmap in plce for the new technology before roll out 
+    - Make sure you are solving a problem and that there is a purpose behind this decision
+    - Look into the competition
+    - Come up with a plan
+    - Build a roadmap
+    - Make an exit plan
+- **Roll out**
+  - Roll the MVP out gradually to the market if the test is good
+  - Reiterate and pivot if the test is not positive
 
+Reference: [Technical Product Management](https://www.linkedin.com/learning/technical-product-management/the-technical-product-management-role?resume=false&u=69919578)
+
+---
+## 利用AI搭建产品思路 Use AI for Product Built
+### 提示词示例 Prompt Examples
+I am a product manager for company X. Generate ideas for a new recomendation feature on the company's streaming service that is unique. This is for a small startup whose primary audience is Generation Z. The current offering are: a live streaming service offering a list of 50 licensed TV shows that the user can choose from, rating for each show and a list of 'favorites'. The goal for this new feature is to increase retention, There is one restriction in your ideation, that we cannot track or use location data due to local regulations. 
+
+### 需要思考的问题 Questions to Consider
+- What is your role in this?
+- Who are your users?
+  - What are their goals, aspirations, pain points, and use cases?
+- Is this for a new product or for enhancing an existing product?
+- Is there a specific goal, like increasing a particular metric?
+- Are there any hard restrictions, like regulations, hardware, software, or human resources?
+- How big is the company? What are its current offerings?
+- Who is the audience?
+- What is the monetization strategy (if there is one)?
+- What is the mission of the company (if there is one)? 
+
+Reference: [Generative AI for Product Managers](https://www.linkedin.com/learning/generative-ai-for-product-managers/generative-ai-for-product-managers-22871562?u=69919578) 
+
+---
 ## 产品思维建构 / Product Thinking Framework
+A PM helps their team build and ship the right product
+A PM should:
+  -  Have a well rounded area of expertise
+  -  Set of well defined goals
+  -  User bullets and back hypothese with data
+  -  Partner with engineers
+  
+### Understand the User
+- Define a persona
+  - Goals and motivations (health, relationship, etc.)
+  - Description (characteristics, profession, etc.)
+  - Use cases (what do they need relative to your work)
+  - Pain points (what is challenging about their current options)
 
 ### 核心思维模型 / Core Thinking Models
 
@@ -244,10 +329,43 @@
 - **产设协作 / Product-Design Collaboration**: 用户体验与功能实现协调 / Coordination between user experience and feature implementation
 - **产运协作 / Product-Operations Collaboration**: 产品策略与运营执行同步 / Synchronization of product strategy and operational execution
 
+### How can quantify a product's success? / 如何量化产品的成功
+- Why are you building this product?
+- Are you trying to increase user engagement on a platform or app?
+- Is your goal to increase **retention** and make sure users keep coming back?
+- Do you want to increase your company's income?
+- Define what you need to measure 
+- Define only the metrics your product will actually impact
+- A product is not just about the software. It's about the **value and customer satisfaction**, so the most important metrics should relate to the user.
+- Metrics
+
+| Quantitative Metrics           | Qualitative Metrics           |
+| ------------------------------ | ----------------------------- |
+| Engagement, Retention, Revenue | User Satisfaction (NPS, CSAT) |
+
+- The acquisition funnel
+  - Awareness
+  - Acquisition
+    - What percent of these users will actually search for my app and click on its page on the app store
+  - Activation
+    - The percentage of people that actually download the app and have officially become users of my app
+  - Retention
+    - The percentage of people that keep coming back to this app
+    - User satisfaction
+  - Revenue
+    - How much money are we making from a user, if any
+      - can come from ads or a freemium model or a subscription.
+  - Referral
+    - How many can help bring more users on your app
+
 ---
 ## 必懂技术知识 / Essential Technical Knowledge
 
 ### API接口基础 / API Interface Fundamentals
+- **API**: Application Programming Interface
+  - In its simplest sense, an input and output mechanism
+  - Allows communication between tow independent sources
+  - API sends a request from product A and expects to receive data back from a product B
 - **RESTful API**: 基于REST架构的API设计标准，使用HTTP动词（GET、POST、PUT、DELETE）进行资源操作
 - **GraphQL**: 灵活的查询语言，允许客户端精确指定需要的数据
 - **API认证**: Token、OAuth2.0、API Key等身份验证机制
@@ -255,6 +373,99 @@
 - **API文档**: Swagger/OpenAPI规范的接口文档编写
 - **API网关**: 统一的API入口，负责路由、认证、限流、监控等
 - **API限流**: Rate Limiting机制，防止接口被恶意调用
+
+**API调用示例 / API Call Examples**:
+- **GET请求获取用户信息**:
+  ```
+  GET https://api.example.com/users/123
+  Headers: Authorization: Bearer your_token_here
+  Response: {"id": 123, "name": "张三", "email": "zhangsan@example.com"}
+  ```
+- **POST请求创建新用户**:
+  ```
+  POST https://api.example.com/users
+  Headers: Content-Type: application/json, Authorization: Bearer your_token_here
+  Body: {"name": "李四", "email": "lisi@example.com"}
+  Response: {"id": 124, "message": "User created successfully"}
+  ```
+- **PUT请求更新用户信息**:
+  ```
+  PUT https://api.example.com/users/123
+  Headers: Content-Type: application/json, Authorization: Bearer your_token_here
+  Body: {"name": "张三", "email": "newemail@example.com"}
+  Response: {"id": 123, "message": "User updated successfully"}
+  ```
+
+### SDK
+**SDK（Software Development Kit）软件开发工具包**是为特定平台或服务提供的预构建代码库集合，简化开发者与API的交互过程。
+
+**SDK示例 / SDK Examples**:
+- **阿里云Python SDK**:
+  ```python
+  from aliyunsdkcore.client import AcsClient
+  from aliyunsdkecs.request.v20140526 import DescribeInstancesRequest
+  
+  # 初始化客户端
+  client = AcsClient('your_access_key', 'your_secret_key', 'cn-hangzhou')
+  
+  # 创建请求
+  request = DescribeInstancesRequest.DescribeInstancesRequest()
+  
+  # 发送请求并获取响应
+  response = client.do_action_with_exception(request)
+  print(response)
+  ```
+
+- **AWS JavaScript SDK**:
+  ```javascript
+  const AWS = require('aws-sdk');
+  
+  // 配置AWS
+  AWS.config.update({
+    accessKeyId: 'your_access_key',
+    secretAccessKey: 'your_secret_key',
+    region: 'us-east-1'
+  });
+  
+  // 创建S3客户端
+  const s3 = new AWS.S3();
+  
+  // 上传文件
+  s3.upload({
+    Bucket: 'my-bucket',
+    Key: 'my-file.txt',
+    Body: 'Hello World'
+  }, (err, data) => {
+    console.log(err, data);
+  });
+  ```
+
+**SDK与API使用的区别 / Differences between SDK and API Usage**:
+
+| 对比维度 / Comparison | API直接调用 / Direct API Calls     | SDK使用 / SDK Usage               |
+| --------------------- | ---------------------------------- | --------------------------------- |
+| **开发复杂度**        | 需要手动构建HTTP请求、处理响应格式 | 提供封装好的方法，调用简单        |
+| **错误处理**          | 需要自己解析HTTP状态码和错误信息   | SDK内置错误处理和重试机制         |
+| **认证方式**          | 需要手动实现签名算法和Token管理    | SDK自动处理认证和签名             |
+| **类型安全**          | 依赖文档，容易出现参数错误         | 提供类型定义，IDE可自动补全       |
+| **维护成本**          | API变更时需要手动适配代码          | SDK版本更新自动适配API变化        |
+| **学习曲线**          | 需要深入了解API文档和HTTP协议      | 遵循编程语言习惯，学习成本低      |
+| **灵活性**            | 完全控制请求细节，高度灵活         | 受SDK功能限制，灵活性相对较低     |
+| **性能**              | 可精确控制请求，性能可优化         | SDK可能包含冗余功能，略有性能损耗 |
+
+**使用建议**:
+- **选择SDK**：快速开发、团队技术栈匹配、需要稳定可靠的解决方案
+- **选择API**：需要精确控制请求、SDK不支持的功能、跨语言统一接口标准
+
+---
+## 其他重要技术概念 / Other Important Technical Concepts
+- **Token**: 模型处理的最小文本单位，影响输入输出长度限制
+- **Context Window**: 模型能处理的最大上下文长度
+- **Temperature**: 控制生成文本随机性的参数
+- **Batch Size**: 批处理大小，影响训练和推理效率
+- **GPU利用率**: 衡量GPU资源使用效率的指标
+- **内存占用**: 模型运行时的显存或内存消耗
+
 
 ### 12个大模型性能指标 / 12 Key AI Model Performance Metrics
 
@@ -330,26 +541,18 @@
 - **优化方向**: 模型压缩、批处理、异步处理、分布式部署
 - **应用场景**: 系统性能评估、容量规划、SLA制定
 
-### 其他重要技术概念 / Other Important Technical Concepts
-- **Token**: 模型处理的最小文本单位，影响输入输出长度限制
-- **Context Window**: 模型能处理的最大上下文长度
-- **Temperature**: 控制生成文本随机性的参数
-- **Batch Size**: 批处理大小，影响训练和推理效率
-- **GPU利用率**: 衡量GPU资源使用效率的指标
-- **内存占用**: 模型运行时的显存或内存消耗
-
 ---
 ## 云计算领域
 ### 云计算基础
 #### 4种服务模型
 
-| 对比维度       | **IaaS**<br/>Infrastructure as a Service<br/>基础设施即服务                         | **PaaS**<br/>Platform as a Service<br/>平台即服务          | **SaaS**<br/>Software as a Service<br/>软件即服务                     | **FaaS**<br/>Function as a Service<br/>函数即服务/无服务器计算                            |
-| -------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **核心概念**   | 提供最基础的计算资源：虚拟机、存储、网络、防火墙等                                  | 提供完整的开发、测试、部署和运维平台，无需管理底层基础设施 | 提供完整可用的、通过互联网访问的应用程序                              | 无需关心服务器，只需上传事件驱动的功能代码，按实际执行时间收费                            |
-| **用户责任**   | 安装和维护操作系统、中间件、运行时环境、应用程序及数据                              | 开发和部署应用程序，管理应用程序数据                       | 几乎为零，只需使用软件并管理用户和数据权限                            | 编写单个的函数逻辑                                                                        |
-| **云厂商责任** | 管理底层物理硬件、虚拟化层、网络和存储的可用性                                      | 管理操作系统、运行时、中间件及所有底层基础设施             | 管理一切：从应用程序、数据到最底层基础设施                            | 动态分配管理运行函数所需的一切计算资源、执行环境、扩缩容                                  |
-| **典型例子**   | • AWS EC2<br/>• Azure Virtual Machines<br/>• Google Compute Engine<br/>• 阿里云 ECS | • Heroku<br/>• Google App Engine<br/>• Azure App Service   | • Salesforce<br/>• Gmail/Outlook<br/>• Microsoft 365<br/>• Zoom/Slack | • AWS Lambda<br/>• Azure Functions<br/>• Google Cloud Functions                           |
-| **适用场景**   | 需要完全控制操作系统和运行环境；自定义软件迁移上云；混合云部署                      | 应用程序开发部署；希望提升开发效率；不想操心基础设施运维   | 使用现成的通用软件应用满足业务需求：办公、客服、营销等                | 事件驱动场景：文件处理、API后端、计划任务、实时数据流处理等瞬时性、无状态、高弹性工作负载 |
+| 对比维度       | **IaaS**<br/>Infrastructure as a Service<br/>基础设施即服务                         | **PaaS**<br/>Platform as a Service<br/>平台即服务                                                                                                            | **SaaS**<br/>Software as a Service<br/>软件即服务                     | **FaaS**<br/>Function as a Service<br/>函数即服务/无服务器计算                            |
+| -------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **核心概念**   | 提供最基础的计算资源：虚拟机、存储、网络、防火墙等                                  | 完全托管的基于云的环境，提供完整的开发、测试、部署和运维平台，无需管理底层基础设施。用户可以在其中配置、实例化、运行和管理计算平台和应用程序的模块化捆绑包。 | 提供完整可用的、通过互联网访问的应用程序                              | 无需关心服务器，只需上传事件驱动的功能代码，按实际执行时间收费                            |
+| **用户责任**   | 安装和维护操作系统、中间件、运行时环境、应用程序及数据                              | 开发和部署应用程序，管理应用程序数据                                                                                                                         | 几乎为零，只需使用软件并管理用户和数据权限                            | 编写单个的函数逻辑                                                                        |
+| **云厂商责任** | 管理底层物理硬件、虚拟化层、网络和存储的可用性                                      | 管理操作系统、运行时、中间件及所有底层基础设施                                                                                                               | 管理一切：从应用程序、数据到最底层基础设施                            | 动态分配管理运行函数所需的一切计算资源、执行环境、扩缩容                                  |
+| **典型例子**   | • AWS EC2<br/>• Azure Virtual Machines<br/>• Google Compute Engine<br/>• 阿里云 ECS | • Heroku<br/>• Google App Engine<br/>• Azure App Service                                                                                                     | • Salesforce<br/>• Gmail/Outlook<br/>• Microsoft 365<br/>• Zoom/Slack | • AWS Lambda<br/>• Azure Functions<br/>• Google Cloud Functions                           |
+| **适用场景**   | 需要完全控制操作系统和运行环境；自定义软件迁移上云；混合云部署                      | 应用程序开发部署；希望提升开发效率；不想操心基础设施运维                                                                                                     | 使用现成的通用软件应用满足业务需求：办公、客服、营销等                | 事件驱动场景：文件处理、API后端、计划任务、实时数据流处理等瞬时性、无状态、高弹性工作负载 |
 
 ### 云上人工智能与机器学习
 - AIaaS（AI as a Service）
@@ -367,171 +570,198 @@
 
 ## 术语表 / Glossary
 
-| 术语/ / Term                                                         | 含义说明 / Explanation                                                                                               |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1-click Review & Publish / 1-click 审核发布                          | One-click process for content review and publishing / 一键式内容审核和发布流程                                       |
-| A100*8                                                               | Configuration of 8 NVIDIA A100 GPUs for AI computing / 8张英伟达A100 GPU的AI计算配置                                 |
-| A/B Testing / A/B测试                                                | 对比两种方案效果的实验方法 / Experimental method to compare effectiveness of two solutions                           |
-| ACK 容器服务                                                         | 提供高性能可伸缩的容器应用管理能力，支持企业级容器化应用的全生命周期管理                                             |
-| Agent / 智能体                                                       | 具备自主感知、决策和行动能力的系统 / System with autonomous perception, decision-making and action capabilities      |
-| Agent Configuration / Agent配置                                      | Configuration of agent parameters, environment, and behaviors / 智能体的参数、环境和行为设定                         |
-| Agile Development / 敏捷开发                                         | 快速迭代、持续交付的软件开发方法 / Software development method with rapid iteration and continuous delivery          |
-| AI Infrastructure Design / AI基础设施设计                            | Underlying architecture and resource planning for AI systems / 人工智能系统的底层架构与资源规划                      |
-| AI Compute Pool / AI算力池                                           | Shared pool of AI computing resources for distributed processing / 用于分布式处理的AI计算资源共享池                  |
-| AI Cloud Technology / AI云技术                                       | Cloud-based artificial intelligence services and infrastructure / 基于云的人工智能服务和基础设施                     |
-| Algorithm Model / 算法模型                                           | 用于解决特定问题的数学模型 / Mathematical models for solving specific problems                                       |
-| API（Application Programming Interface） / 应用程序编程接口          | 应用程序编程接口 / Application programming interface                                                                 |
-| API Endpoint / API接口                                               | Interface for communication between applications / 应用程序之间通信的接口                                            |
-| API Gateway / API网关                                                | Service for managing API traffic / 管理API流量的服务                                                                 |
-| Asynchronous Communication / 异步通信                                | Data exchange method that does not block the main process / 不阻塞主流程的数据交换方式                               |
-| Automatic Speech Recognition (ASR) / 语音识别                        | 让计算机识别和理解语音 / Enabling computers to recognize and understand speech                                       |
-| AWS (Amazon Web Services)                                            | Amazon's cloud computing platform providing various services / 亚马逊的云计算平台，提供各种服务                      |
-| Backlog / 需求池                                                     | 产品待开发的需求列表 / List of product requirements to be developed                                                  |
-| B-end Customer/Business Client / B 端客户                            | Enterprise customers, products or services for businesses / 企业级客户，面向企业的产品或服务                         |
-| Blockchain / 区块链                                                  | Decentralized distributed ledger technology / 去中心化分布式账本技术                                                 |
-| Callback Queue / 回调队列                                            | Queue for managing callback functions in asynchronous operations / 管理异步操作中回调函数的队列                      |
-| C-end/Consumer / C 端                                                | Individual consumers, products or services for personal users / 个人消费者，面向个人用户的产品或服务                 |
-| Churn Rate / 用户流失                                                | Percentage of users leaving the product / 用户离开产品的比例                                                         |
-| CI/CD（Continuous Integration/Continuous Delivery）                  | Continuous integration/continuous delivery / 持续集成/持续交付                                                       |
-| CLI Tools / CLI工具                                                  | Command Line Interface tools for system operation / 用于系统操作的命令行界面工具                                     |
-| Cloud Computing / 云计算                                             | 基于互联网的计算服务 / Internet-based computing services                                                             |
-| Cloud Native / 云原生                                                | Architecture and development approach for cloud-optimized applications / 面向云优化应用的架构和开发方法              |
-| Cloud Native Inference / 云原生推理                                  | AI inference services optimized for cloud-native environments / 针对云原生环境优化的AI推理服务                       |
-| CTO (Chief Technology Officer) / 首席技术官                          | Executive responsible for technology strategy and implementation / 负责技术战略和实施的高管                          |
-| Customer Acquisition Cost / 客户接入成本                             | Cost associated with acquiring and onboarding new customers / 获取和接入新客户的相关成本                             |
-| Customer Call Cost / 单客户调用成本                                  | Cost per individual customer API call or service usage / 单个客户API调用或服务使用的成本                             |
-| Customer Model Deployment Count / 客户模型上线数                     | Number of models deployed for customers / 为客户部署的模型数量                                                       |
-| Code Review / 代码审查                                               | Quality and compliance review of code / 对代码进行质量和规范性检查                                                   |
-| Competitive Analysis / 竞品分析                                      | 对竞争产品的功能、市场等进行分析 / Analysis of competitive products' features, market position                       |
-| Computer Vision (CV) / 计算机视觉                                    | 让计算机理解和分析图像视频 / Enabling computers to understand and analyze images and videos                          |
-| Confidence Threshold / 置信度阈值                                    | Minimum confidence level required for AI model predictions / AI模型预测所需的最低置信度水平                          |
-| Conversion Rate / 转化率                                             | 用户完成目标行为的比例 / Percentage of users completing target behaviors                                             |
-| CRM（Customer Relationship Management）                              | 客户关系管理 / Customer relationship management                                                                      |
-| Data Annotation / 数据标注                                           | 为训练数据添加标签的过程 / Process of adding labels to training data                                                 |
-| Data Closed Loop / 数据闭环                                          | Continuous data feedback and improvement cycle / 持续的数据反馈和改进循环                                            |
-| Data Governance / 数据治理                                           | 数据管理和规范体系 / Data management and governance framework                                                        |
-| Data Validation / 数据校验                                           | Process of checking data accuracy and completeness / 检查数据准确性和完整性的过程                                    |
-| DAU Growth / DAU增长                                                 | Daily Active User growth metrics and strategies / 日活跃用户增长指标和策略                                           |
-| DAU/MAU（Daily/Monthly Active User） / 日活/月活跃用户数             | 日活/月活跃用户数 / Daily/Monthly active user count                                                                  |
-| Deep Learning (DL) / 深度学习                                        | 基于神经网络的机器学习方法 / Machine learning method based on neural networks                                        |
-| Deployment / 部署                                                    | Releasing products or services to production environment / 将产品或服务发布到生产环境                                |
-| DevOps                                                               | Development and operations integration / 开发与运维一体化                                                            |
-| Digital Twin / 数字孪生                                              | 现实对象的数字化虚拟映射 / Digital virtual mapping of real objects                                                   |
-| Distributed Training / 分布式训练                                    | Training AI models across multiple computing nodes / 在多个计算节点上训练AI模型                                      |
-| DSL（Domain Specific Language）                                      | Programming language for specific domains / 面向特定领域的编程语言                                                   |
-| Dynamic Evaluation Baseline / 动态评估基线                           | Evaluation reference standards that change with time or data / 随时间或数据变化的评估参考标准                        |
-| EC2 (Elastic Compute Cloud)                                          | Amazon's scalable cloud computing service / 亚马逊的可扩展云计算服务                                                 |
-| Elastic Scaling / 弹性伸缩                                           | Automatic resource scaling based on demand / 基于需求的自动资源扩缩                                                  |
-| Ecosystem / 生态系统                                                 | Cooperation and symbiotic system related to products / 产品相关的合作与共生体系                                      |
-| Ecosystem Loop / 生态闭环                                            | Self-circulating system of product ecosystem / 产品生态的自我循环体系                                                |
-| Ecosystem Partnership / 生态合作                                     | Cooperation with other products/enterprises / 与其他产品/企业的合作                                                  |
-| Effective Computing Hours per GPU / 单卡有效算力小时                 | Productive computing time per GPU unit / 单个GPU单元的有效计算时间                                                   |
-| Embodied Intelligence / 具身智能                                     | 智能体与物理环境交互的智能 / Intelligence of agents interacting with physical environment                            |
-| Empathy Map / 同理心地图                                             | Tool for visualizing user emotions, needs, and behaviors / 可视化用户情感、需求和行为的工具                          |
-| ERP（Enterprise Resource Planning）                                  | 企业资源计划 / Enterprise resource planning                                                                          |
-| Ethics Review / 伦理审查                                             | 对产品/技术伦理风险的评估 / Assessment of ethical risks in products/technology                                       |
-| Event Tracking / 埋点                                                | Behavioral data collection within products / 产品内行为数据采集                                                      |
-| Factual Error Rate / 事实性错误率                                    | Percentage of factually incorrect responses in AI outputs / AI输出中事实错误回答的百分比                             |
-| Feature Usage Validation / 功能使用率验证                            | Process of validating and analyzing feature usage rates / 验证和分析功能使用率的过程                                 |
-| Fine-tuning / 微调                                                   | Process of adapting pre-trained models for specific tasks / 为特定任务调整预训练模型的过程                           |
-| First Packet Latency / 首包延迟                                      | Time taken to receive the first data packet in response / 接收响应中第一个数据包所需的时间                           |
-| Git                                                                  | 分布式版本控制系统 / Distributed version control system                                                              |
-| GPU ECS (GPU Elastic Compute Service) / GPU弹性计算服务              | Elastic compute service with GPU acceleration / 带GPU加速的弹性计算服务                                              |
-| GPU Pool / 卡池                                                      | Shared pool of GPU resources for computing tasks / 用于计算任务的GPU资源共享池                                       |
-| GPU Scheduling / GPU调度                                             | Resource allocation and management of GPU computing tasks / GPU计算任务的资源分配和管理                              |
-| GPU Virtualization / GPU虚拟化                                       | Technology for sharing GPU resources among multiple users / 在多个用户间共享GPU资源的技术                            |
-| Growth Hacking / 增长黑客                                            | Data-driven product growth strategy / 以数据驱动的产品增长策略                                                       |
-| GTM（Go-To-Market）                                                  | Go-to-market strategy / 产品上市策略                                                                                 |
-| Hash On-chain / 哈希上链                                             | Recording hash values on blockchain for data integrity / 将哈希值记录在区块链上以确保数据完整性                      |
-| High Performance Computing (HPC) / 高性能计算                        | Computing systems with exceptional performance for complex tasks / 用于复杂任务的高性能计算系统                      |
-| High-fidelity Prototype / 高保真原型                                 | Detailed prototype design close to real products / 细节丰富、接近真实产品的原型设计                                  |
-| Hallucination / 模型幻觉                                             | AI model generating false or nonsensical information / AI模型生成虚假或无意义信息的现象                              |
-| IaaS（Infrastructure as a Service） / 基础设施即服务                 | 基础设施即服务 / Infrastructure as a service                                                                         |
-| Inference Acceleration / 推理加速                                    | Optimization techniques to speed up AI model inference / 加速AI模型推理的优化技术                                    |
-| Internet of Things (IoT) / 物联网                                    | 设备互联互通的网络体系 / Network system of interconnected devices                                                    |
-| Iteration / 迭代                                                     | 产品开发周期内的持续优化过程 / Continuous optimization process within product development cycle                      |
-| JuiceFS                                                              | Distributed file system for cloud-native applications / 面向云原生应用的分布式文件系统                               |
-| Key Performance Indicator (KPI) / 关键绩效指标                       | 衡量产品或业务目标达成情况的指标 / Metrics to measure product or business goal achievement                           |
-| KL Divergence（Kullback-Leibler Divergence） / KL 散度               | Metric for measuring differences between two probability distributions / 衡量两个概率分布差异的指标                  |
-| KPI（Key Performance Indicator）                                     | 关键绩效指标 / Key performance indicator                                                                             |
-| LangChain                                                            | Open-source framework for building language model applications / 一种用于构建语言模型应用的开源框架                  |
-| Leading Indicator / 先导指标                                         | Metrics that predict future performance trends / 预测未来绩效趋势的指标                                              |
-| Load Balancing / 负载均衡                                            | Distributing system traffic to optimize resource utilization / 分配系统流量以优化资源利用率                          |
-| Local Debugging / 本地调试                                           | Code debugging in local environment / 在本地环境进行代码调试                                                         |
-| MaaS（Model as a Service）                                           | Model as a service, online invocation and management of AI models / 模型即服务，AI模型在线调用与管理                 |
-| Machine Learning (ML) / 机器学习                                     | 通过数据训练模型实现智能 / Achieving intelligence through data-trained models                                        |
-| Message Queue / 消息队列                                             | System for asynchronous communication between applications / 应用程序间异步通信的系统                                |
-| Microservices / 微服务                                               | Small independent service architecture / 小型独立服务架构                                                            |
-| Milestone / 里程碑                                                   | 项目关键节点或阶段性目标 / Key project nodes or phased objectives                                                    |
-| Minimum Viable Product (MVP) / 最小可行产品                          | 最小化功能集、可快速验证市场的产品 / Product with minimal features for quick market validation                       |
-| MNIST                                                                | Standard dataset for handwritten digit recognition / 手写数字识别的标准数据集                                        |
-| Model Hot Loading Efficiency / 模型热加载效率                        | Performance metric for dynamic model loading without system restart / 无需系统重启的动态模型加载性能指标             |
-| Model Convergence Steps / 模型收敛步数                               | Number of training iterations required for model convergence / 模型收敛所需的训练迭代次数                            |
-| Multimodal / 多模态                                                  | 融合多种感知信息的技术 / Technology integrating multiple sensory information                                         |
-| Multimodal Workflow / 多模态工作流                                   | Workflow integrating multiple types of data and interaction modes / 集成多种数据类型和交互模式的工作流               |
-| MVP（Minimum Viable Product）                                        | 最小可行产品 / Minimum viable product                                                                                |
-| Natural Language Processing (NLP) / 自然语言处理                     | 让计算机理解和处理人类语言 / Enabling computers to understand and process human language                             |
-| North Star Metric / 北极星指标                                       | Key metric that guides product strategy and team efforts / 指导产品策略和团队工作的关键指标                          |
-| NPS (Net Promoter Score) / 客户净推荐值                              | Customer loyalty metric measuring likelihood of recommendation / 衡量客户推荐可能性的忠诚度指标                      |
-| OKR（Objectives and Key Results）                                    | 目标与关键结果管理方法 / Objectives and key results management method                                                |
-| On-chain Evidence Storage / 链上存证                                 | Storing evidence or data on blockchain for verification / 在区块链上存储证据或数据以供验证                           |
-| Operation / 运营                                                     | Promotion and maintenance after product launch / 产品上线后的推广与维护                                              |
-| OSM (Objective-Strategy-Measurement)                                 | Framework for goal setting and performance measurement / 目标设定和绩效测量的框架                                    |
-| Overselling Strategy / 超卖策略                                      | Resource allocation strategy that sells more capacity than physically available / 销售超过物理可用容量的资源分配策略 |
-| PaaS（Platform as a Service） / 平台即服务                           | 平台即服务 / Platform as a service                                                                                   |
-| Paid Conversion / 付费转化                                           | Conversion from free to paid users / 免费用户转为付费用户                                                            |
-| Penetration Rate / 渗透率                                            | Product coverage rate in target market / 产品在目标市场的覆盖率                                                      |
-| Pitch / 产品推介                                                     | Presentation to promote or sell a product idea / 推广或销售产品理念的演示                                            |
-| PMF（Product-Market Fit）                                            | 产品与市场的匹配度 / Product-market fit degree                                                                       |
-| POC（Proof of Concept）                                              | 概念验证 / Proof of concept                                                                                          |
-| Pre-training / 预训练                                                | Initial training phase of AI models on large datasets / AI模型在大型数据集上的初始训练阶段                           |
-| Priority / 需求优先级                                                | 需求开发的先后顺序 / Priority order for requirement development                                                      |
-| Privacy Compliance / 隐私合规                                        | 符合数据隐私相关法规 / Compliance with data privacy regulations                                                      |
-| Product Life Cycle (PLC) / 产品生命周期                              | 产品从诞生到退出市场的全过程 / Complete process from product birth to market exit                                    |
-| Product Requirement Document (PRD) / 需求文档                        | 产品需求说明书 / Product requirement specification document                                                          |
-| Project Initiation / 立项                                            | 产品或项目正式启动的过程 / Process of officially launching a product or project                                      |
-| Prometheus                                                           | Open-source monitoring and alerting system / 开源监控和告警系统                                                      |
-| Prompt                                                               | Input text or instruction given to AI models / 提供给AI模型的输入文本或指令                                          |
-| Prototype / 原型                                                     | 产品功能和界面初步设计稿 / Initial design draft of product features and interface                                    |
-| Public Cloud / 公有云                                                | Cloud services shared among multiple organizations / 多个组织共享的云服务                                            |
-| Product Requirement Document (PRD) / 需求文档                        | 产品需求说明书 / Product requirement specification document                                                          |
-| Project Initiation / 立项                                            | 产品或项目正式启动的过程 / Process of officially launching a product or project                                      |
-| Prototype / 原型                                                     | 产品功能和界面初步设计稿 / Initial design draft of product features and interface                                    |
-| QA（Quality Assurance）                                              | 质量保证 / Quality assurance                                                                                         |
-| RAG (Retrieval-Augmented Generation)                                 | AI technique combining retrieval and generation / 结合检索和生成的AI技术                                             |
-| Recommendation System / 智能推荐                                     | 基于数据和算法的个性化推荐 / Personalized recommendations based on data and algorithms                               |
-| RBAC System (Role-Based Access Control) / RBAC系统                   | Security system that manages user permissions based on roles / 基于角色管理用户权限的安全系统                        |
-| Reinforcement Learning (RL) / 强化学习                               | 通过奖励机制训练智能体 / Training intelligent agents through reward mechanisms                                       |
-| Requirement Analysis / 需求分析                                      | 对用户需求进行收集、分析和整理 / Collection, analysis and organization of user requirements                          |
-| Requirement Review / 需求评审                                        | 对需求进行讨论和确认 / Discussion and confirmation of requirements                                                   |
-| Requirement Traceability / 需求跟踪                                  | Tracking of requirement implementation process / 需求实现过程的跟踪                                                  |
-| RESTful API                                                          | API endpoint based on REST architectural style / 基于REST架构风格的API接口                                           |
-| Retention Rate / 留存率                                              | 用户持续使用产品的比例 / Percentage of users who continue using the product                                          |
-| RLHF (Reinforcement Learning from Human Feedback) / 人类反馈强化学习 | Training AI models using human feedback to improve performance / 使用人类反馈训练AI模型以提升性能                    |
-| Roadmap / 路线图                                                     | 产品未来发展规划和时间表 / Product future development plan and timeline                                              |
-| ROI（Return on Investment）                                          | 投资回报率 / Return on investment                                                                                    |
-| SaaS（Software as a Service） / 软件即服务                           | 软件即服务，云端交付模式 / Software as a service, cloud delivery model                                               |
-| Scrum                                                                | 敏捷开发框架 / Agile development framework                                                                           |
-| SDK（Software Development Kit） / 软件开发工具包                     | 软件开发工具包 / Software development kit                                                                            |
-| Self-Attention / 自注意力                                            | Mechanism allowing models to focus on relevant parts of input / 允许模型关注输入相关部分的机制                       |
-| Sensitive Word Probability / 敏感词概率                              | Probability of a word being identified as sensitive / 某词被判定为敏感词的概率                                       |
-| Slot Filling / 槽位填充                                              | Technology for automatically completing information in dialogs or forms / 在对话或表单中自动补全信息的技术           |
-| Smart Hardware / 智能硬件                                            | 具备智能功能的硬件设备 / Hardware devices with intelligent functions                                                 |
-| Spot GPU / 竞价型GPU                                                 | Cost-effective GPU instances with variable pricing / 定价灵活的经济型GPU实例                                         |
-| Sprint / 冲刺                                                        | Short iterative development cycle in agile methodology / 敏捷开发方法中的短期迭代开发周期                            |
-| SQL Query / SQL查询                                                  | Data retrieval operations using Structured Query Language / 结构化查询语言的数据检索操作                             |
-| SRS（Software Requirement Specification）                            | 软件需求规格说明 / Software requirement specification                                                                |
-| Stepped Discount / 阶梯折扣                                          | Pricing model with discounts based on volume tiers / 基于数量层级的折扣定价模式                                      |
-| Technical Documentation / 技术文档                                   | 产品技术实现说明 / Technical implementation documentation                                                            |
-| Test Case / 测试用例                                                 | 用于验证产品功能的测试场景 / Test scenarios for verifying product functions                                          |
-| UAT（User Acceptance Testing）                                       | 用户验收测试 / User acceptance testing                                                                               |
-| User Experience (UX) / 用户体验                                      | 用户在使用产品过程中的整体感受 / Overall user experience when using products                                         |
-| User Interface (UI) / 用户界面                                       | 产品与用户交互的界面设计 / Interface design for product-user interaction                                             |
-| User Journey / 用户旅程                                              | Complete process of user interaction with products / 用户与产品交互的完整流程                                        |
-| User Profile/Persona / 用户画像                                      | 对目标用户特征的抽象描述 / Abstract description of target user characteristics                                       |
-| User Research / 用户调研                                             | Research on target users / 对目标用户的调研                                                                          |
-| User Testing / 用户测试                                              | User participation in product testing / 让用户参与产品测试                                                           |
-| Vertical Domain / 垂直领域                                           | Specialized industry or market segment with specific needs / 具有特定需求的专业行业或细分市场                        |
-| Weekly Active Training Tasks / 周活训练任务数                        | Number of training tasks executed per week / 每周执行的训练任务数量                                                  |
+| 术语/ / Term                                                         | 含义说明 / Explanation                                                                                                    |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 1-click Review & Publish / 1-click 审核发布                          | One-click process for content review and publishing / 一键式内容审核和发布流程                                            |
+| A100*8                                                               | Configuration of 8 NVIDIA A100 GPUs for AI computing / 8张英伟达A100 GPU的AI计算配置                                      |
+| A/B Testing / A/B测试                                                | 对比两种方案效果的实验方法 / Experimental method to compare effectiveness of two solutions                                |
+| AI Root Cause / AI根因                                               | Root cause analysis using AI for system or business issues / 利用AI进行系统或业务问题的根因分析                           |
+| Application Micro-segmentation / 应用微隔离                          | Security technique for isolating applications at a granular level / 用于细粒度隔离应用的安全技术                          |
+| BI System / BI系统                                                   | Business Intelligence system for data analysis and reporting / 用于数据分析和报表的商业智能系统                           |
+| ACK 容器服务                                                         | 提供高性能可伸缩的容器应用管理能力，支持企业级容器化应用的全生命周期管理                                                  |
+| Agent / 智能体                                                       | 具备自主感知、决策和行动能力的系统 / System with autonomous perception, decision-making and action capabilities           |
+| Agent Configuration / Agent配置                                      | Configuration of agent parameters, environment, and behaviors / 智能体的参数、环境和行为设定                              |
+| Agile Development / 敏捷开发                                         | 快速迭代、持续交付的软件开发方法 / Software development method with rapid iteration and continuous delivery               |
+| AI Infrastructure Design / AI基础设施设计                            | Underlying architecture and resource planning for AI systems / 人工智能系统的底层架构与资源规划                           |
+| AI Compute Pool / AI算力池                                           | Shared pool of AI computing resources for distributed processing / 用于分布式处理的AI计算资源共享池                       |
+| AI Cloud Technology / AI云技术                                       | Cloud-based artificial intelligence services and infrastructure / 基于云的人工智能服务和基础设施                          |
+| Algorithm Model / 算法模型                                           | 用于解决特定问题的数学模型 / Mathematical models for solving specific problems                                            |
+| API（Application Programming Interface） / 应用程序编程接口          | 应用程序编程接口 / Application programming interface                                                                      |
+| API Endpoint / API接口                                               | Interface for communication between applications / 应用程序之间通信的接口                                                 |
+| API Gateway / API网关                                                | Service for managing API traffic / 管理API流量的服务                                                                      |
+| Asynchronous Communication / 异步通信                                | Data exchange method that does not block the main process / 不阻塞主流程的数据交换方式                                    |
+| Automatic Speech Recognition (ASR) / 语音识别                        | 让计算机识别和理解语音 / Enabling computers to recognize and understand speech                                            |
+| AWS (Amazon Web Services)                                            | Amazon's cloud computing platform providing various services / 亚马逊的云计算平台，提供各种服务                           |
+| Backlog / 需求池                                                     | 产品待开发的需求列表 / List of product requirements to be developed                                                       |
+| B-end Customer/Business Client / B 端客户                            | Enterprise customers, products or services for businesses / 企业级客户，面向企业的产品或服务                              |
+| Blockchain / 区块链                                                  | Decentralized distributed ledger technology / 去中心化分布式账本技术                                                      |
+| Callback Queue / 回调队列                                            | Queue for managing callback functions in asynchronous operations / 管理异步操作中回调函数的队列                           |
+| C-end/Consumer / C 端                                                | Individual consumers, products or services for personal users / 个人消费者，面向个人用户的产品或服务                      |
+| Churn Rate / 用户流失                                                | Percentage of users leaving the product / 用户离开产品的比例                                                              |
+| CI/CD（Continuous Integration/Continuous Delivery）                  | Continuous integration/continuous delivery / 持续集成/持续交付                                                            |
+| CLI Tools / CLI工具                                                  | Command Line Interface tools for system operation / 用于系统操作的命令行界面工具                                          |
+| Cloud Computing / 云计算                                             | 基于互联网的计算服务 / Internet-based computing services                                                                  |
+| Cloud Native / 云原生                                                | Architecture and development approach for cloud-optimized applications / 面向云优化应用的架构和开发方法                   |
+| Cloud Native Inference / 云原生推理                                  | AI inference services optimized for cloud-native environments / 针对云原生环境优化的AI推理服务                            |
+| CTO (Chief Technology Officer) / 首席技术官                          | Executive responsible for technology strategy and implementation / 负责技术战略和实施的高管                               |
+| Customer Acquisition Cost / 客户接入成本                             | Cost associated with acquiring and onboarding new customers / 获取和接入新客户的相关成本                                  |
+| Customer Call Cost / 单客户调用成本                                  | Cost per individual customer API call or service usage / 单个客户API调用或服务使用的成本                                  |
+| Customer Model Deployment Count / 客户模型上线数                     | Number of models deployed for customers / 为客户部署的模型数量                                                            |
+| Code Review / 代码审查                                               | Quality and compliance review of code / 对代码进行质量和规范性检查                                                        |
+| Competitive Analysis / 竞品分析                                      | 对竞争产品的功能、市场等进行分析 / Analysis of competitive products' features, market position                            |
+| Computer Vision (CV) / 计算机视觉                                    | 让计算机理解和分析图像视频 / Enabling computers to understand and analyze images and videos                               |
+| Confidence Threshold / 置信度阈值                                    | Minimum confidence level required for AI model predictions / AI模型预测所需的最低置信度水平                               |
+| Conversion Rate / 转化率                                             | 用户完成目标行为的比例 / Percentage of users completing target behaviors                                                  |
+| CRM（Customer Relationship Management）                              | 客户关系管理 / Customer relationship management                                                                           |
+| Data Annotation / 数据标注                                           | 为训练数据添加标签的过程 / Process of adding labels to training data                                                      |
+| Data Closed Loop / 数据闭环                                          | Continuous data feedback and improvement cycle / 持续的数据反馈和改进循环                                                 |
+| Data Governance / 数据治理                                           | 数据管理和规范体系 / Data management and governance framework                                                             |
+| Data Validation / 数据校验                                           | Process of checking data accuracy and completeness / 检查数据准确性和完整性的过程                                         |
+| DAU Growth / DAU增长                                                 | Daily Active User growth metrics and strategies / 日活跃用户增长指标和策略                                                |
+| DAU/MAU（Daily/Monthly Active User） / 日活/月活跃用户数             | 日活/月活跃用户数 / Daily/Monthly active user count                                                                       |
+| Deep Learning (DL) / 深度学习                                        | 基于神经网络的机器学习方法 / Machine learning method based on neural networks                                             |
+| Deployment / 部署                                                    | Releasing products or services to production environment / 将产品或服务发布到生产环境                                     |
+| DevOps                                                               | Development and operations integration / 开发与运维一体化                                                                 |
+| Database / 数据库                                                    | Organized collection of structured information or data / 有组织的结构化信息或数据集合                                     |
+| DCS (Distributed Control System) / 分布式控制系统                    | Industrial automation system for distributed process control / 工业自动化分布式过程控制系统                               |
+| Digital Twin / 数字孪生                                              | 现实对象的数字化虚拟映射 / Digital virtual mapping of real objects                                                        |
+| Distributed Training / 分布式训练                                    | Training AI models across multiple computing nodes / 在多个计算节点上训练AI模型                                           |
+| DSL（Domain Specific Language）                                      | Programming language for specific domains / 面向特定领域的编程语言                                                        |
+| Dynamic Evaluation Baseline / 动态评估基线                           | Evaluation reference standards that change with time or data / 随时间或数据变化的评估参考标准                             |
+| EC2 (Elastic Compute Cloud)                                          | Amazon's scalable cloud computing service / 亚马逊的可扩展云计算服务                                                      |
+| Elastic Scaling / 弹性伸缩                                           | Automatic resource scaling based on demand / 基于需求的自动资源扩缩                                                       |
+| Ecosystem / 生态系统                                                 | Cooperation and symbiotic system related to products / 产品相关的合作与共生体系                                           |
+| Ecosystem Loop / 生态闭环                                            | Self-circulating system of product ecosystem / 产品生态的自我循环体系                                                     |
+| Ecosystem Partnership / 生态合作                                     | Cooperation with other products/enterprises / 与其他产品/企业的合作                                                       |
+| Effective Computing Hours per GPU / 单卡有效算力小时                 | Productive computing time per GPU unit / 单个GPU单元的有效计算时间                                                        |
+| Embodied Intelligence / 具身智能                                     | 智能体与物理环境交互的智能 / Intelligence of agents interacting with physical environment                                 |
+| Empathy Map / 同理心地图                                             | Tool for visualizing user emotions, needs, and behaviors / 可视化用户情感、需求和行为的工具                               |
+| ERP（Enterprise Resource Planning）                                  | 企业资源计划 / Enterprise resource planning                                                                               |
+| Ethics Review / 伦理审查                                             | 对产品/技术伦理风险的评估 / Assessment of ethical risks in products/technology                                            |
+| Event Tracking / 埋点                                                | Behavioral data collection within products / 产品内行为数据采集                                                           |
+| Factual Error Rate / 事实性错误率                                    | Percentage of factually incorrect responses in AI outputs / AI输出中事实错误回答的百分比                                  |
+| Feature Usage Validation / 功能使用率验证                            | Process of validating and analyzing feature usage rates / 验证和分析功能使用率的过程                                      |
+| Fine-tuning / 微调                                                   | Process of adapting pre-trained models for specific tasks / 为特定任务调整预训练模型的过程                                |
+| First Packet Latency / 首包延迟                                      | Time taken to receive the first data packet in response / 接收响应中第一个数据包所需的时间                                |
+| Git                                                                  | 分布式版本控制系统 / Distributed version control system                                                                   |
+| GPU ECS (GPU Elastic Compute Service) / GPU弹性计算服务              | Elastic compute service with GPU acceleration / 带GPU加速的弹性计算服务                                                   |
+| GPU Pool / 卡池                                                      | Shared pool of GPU resources for computing tasks / 用于计算任务的GPU资源共享池                                            |
+| GPU Scheduling / GPU调度                                             | Resource allocation and management of GPU computing tasks / GPU计算任务的资源分配和管理                                   |
+| GPU Virtualization / GPU虚拟化                                       | Technology for sharing GPU resources among multiple users / 在多个用户间共享GPU资源的技术                                 |
+| Growth Hacking / 增长黑客                                            | Data-driven product growth strategy / 以数据驱动的产品增长策略                                                            |
+| GTM（Go-To-Market）                                                  | Go-to-market strategy / 产品上市策略                                                                                      |
+| Hash On-chain / 哈希上链                                             | Recording hash values on blockchain for data integrity / 将哈希值记录在区块链上以确保数据完整性                           |
+| High Performance Computing (HPC) / 高性能计算                        | Computing systems with exceptional performance for complex tasks / 用于复杂任务的高性能计算系统                           |
+| High-fidelity Prototype / 高保真原型                                 | Detailed prototype design close to real products / 细节丰富、接近真实产品的原型设计                                       |
+| Hallucination / 模型幻觉                                             | AI model generating false or nonsensical information / AI模型生成虚假或无意义信息的现象                                   |
+| IaaS（Infrastructure as a Service） / 基础设施即服务                 | 基础设施即服务 / Infrastructure as a service                                                                              |
+| Industrial Protocols (TCP/IP, HTTP, REST) / 工业协议                 | Communication standards for industrial automation (e.g., TCP/IP, HTTP, REST) / 工业自动化通信标准（如TCP/IP、HTTP、REST） |
+| Inference Acceleration / 推理加速                                    | Optimization techniques to speed up AI model inference / 加速AI模型推理的优化技术                                         |
+| Internet of Things (IoT) / 物联网                                    | 设备互联互通的网络体系 / Network system of interconnected devices                                                         |
+| Iteration / 迭代                                                     | 产品开发周期内的持续优化过程 / Continuous optimization process within product development cycle                           |
+| JuiceFS                                                              | Distributed file system for cloud-native applications / 面向云原生应用的分布式文件系统                                    |
+| Knowledge Graph / 知识图谱                                           | Semantic network for representing knowledge and relationships / 用于表示知识和关系的语义网络                              |
+| Key Performance Indicator (KPI) / 关键绩效指标                       | 衡量产品或业务目标达成情况的指标 / Metrics to measure product or business goal achievement                                |
+| KL Divergence（Kullback-Leibler Divergence） / KL 散度               | Metric for measuring differences between two probability distributions / 衡量两个概率分布差异的指标                       |
+| KPI（Key Performance Indicator）                                     | 关键绩效指标 / Key performance indicator                                                                                  |
+| LangChain                                                            | Open-source framework for building language model applications / 一种用于构建语言模型应用的开源框架                       |
+| Leading Indicator / 先导指标                                         | Metrics that predict future performance trends / 预测未来绩效趋势的指标                                                   |
+| Load Balancing / 负载均衡                                            | Distributing system traffic to optimize resource utilization / 分配系统流量以优化资源利用率                               |
+| Local Debugging / 本地调试                                           | Code debugging in local environment / 在本地环境进行代码调试                                                              |
+| MaaS（Model as a Service）                                           | Model as a service, online invocation and management of AI models / 模型即服务，AI模型在线调用与管理                      |
+| Machine Learning (ML) / 机器学习                                     | 通过数据训练模型实现智能 / Achieving intelligence through data-trained models                                             |
+| Message Queue / 消息队列                                             | System for asynchronous communication between applications / 应用程序间异步通信的系统                                     |
+| Microservices / 微服务                                               | Small independent service architecture / 小型独立服务架构                                                                 |
+| Milestone / 里程碑                                                   | 项目关键节点或阶段性目标 / Key project nodes or phased objectives                                                         |
+| MES (Manufacturing Execution System) / 制造执行系统                  | System for managing and monitoring production processes / 用于生产过程管理和监控的系统                                    |
+| Modbus / Modbus协议                                                  | Serial communication protocol for industrial devices / 工业设备的串行通信协议                                             |
+| Multi-source Heterogeneous Data / 多源异构数据                       | Data from multiple and diverse sources and formats / 来自多种来源和格式的数据                                             |
+| Minimum Viable Product (MVP) / 最小可行产品                          | 最小化功能集、可快速验证市场的产品 / Product with minimal features for quick market validation                            |
+| MNIST                                                                | Standard dataset for handwritten digit recognition / 手写数字识别的标准数据集                                             |
+| Model Hot Loading Efficiency / 模型热加载效率                        | Performance metric for dynamic model loading without system restart / 无需系统重启的动态模型加载性能指标                  |
+| Model Convergence Steps / 模型收敛步数                               | Number of training iterations required for model convergence / 模型收敛所需的训练迭代次数                                 |
+| Multimodal / 多模态                                                  | 融合多种感知信息的技术 / Technology integrating multiple sensory information                                              |
+| Multimodal Workflow / 多模态工作流                                   | Workflow integrating multiple types of data and interaction modes / 集成多种数据类型和交互模式的工作流                    |
+| MVP（Minimum Viable Product）                                        | 最小可行产品 / Minimum viable product                                                                                     |
+| OPC UA (Open Platform Communications Unified Architecture) / OPC UA  | Machine-to-machine communication protocol for industrial automation / 工业自动化的机器间通信协议                          |
+| PLC (Programmable Logic Controller) / 可编程逻辑控制器               | Industrial digital computer for automation of electromechanical processes / 用于自动化电气机械过程的工业数字计算机        |
+| PROFIBUS (Process Field Bus) / 过程现场总线                          | Standard for fieldbus communication in automation technology / 自动化技术中的现场总线通信标准                             |
+| Natural Language Processing (NLP) / 自然语言处理                     | 让计算机理解和处理人类语言 / Enabling computers to understand and process human language                                  |
+| North Star Metric / 北极星指标                                       | Key metric that guides product strategy and team efforts / 指导产品策略和团队工作的关键指标                               |
+| NPS (Net Promoter Score) / 客户净推荐值                              | Customer loyalty metric measuring likelihood of recommendation / 衡量客户推荐可能性的忠诚度指标                           |
+| OKR（Objectives and Key Results）                                    | 目标与关键结果管理方法 / Objectives and key results management method                                                     |
+| On-chain Evidence Storage / 链上存证                                 | Storing evidence or data on blockchain for verification / 在区块链上存储证据或数据以供验证                                |
+| Operation / 运营                                                     | Promotion and maintenance after product launch / 产品上线后的推广与维护                                                   |
+| OSM (Objective-Strategy-Measurement)                                 | Framework for goal setting and performance measurement / 目标设定和绩效测量的框架                                         |
+| Overselling Strategy / 超卖策略                                      | Resource allocation strategy that sells more capacity than physically available / 销售超过物理可用容量的资源分配策略      |
+| PaaS（Platform as a Service） / 平台即服务                           | 平台即服务 / Platform as a service                                                                                        |
+| Paid Conversion / 付费转化                                           | Conversion from free to paid users / 免费用户转为付费用户                                                                 |
+| Penetration Rate / 渗透率                                            | Product coverage rate in target market / 产品在目标市场的覆盖率                                                           |
+| Pitch / 产品推介                                                     | Presentation to promote or sell a product idea / 推广或销售产品理念的演示                                                 |
+| PMF（Product-Market Fit）                                            | 产品与市场的匹配度 / Product-market fit degree                                                                            |
+| POC（Proof of Concept）                                              | 概念验证 / Proof of concept                                                                                               |
+| Polling API / 轮询API                                                | API communication pattern where client repeatedly requests server for updates / 客户端重复向服务器请求更新的API通信模式   |
+| Pre-training / 预训练                                                | Initial training phase of AI models on large datasets / AI模型在大型数据集上的初始训练阶段                                |
+| Priority / 需求优先级                                                | 需求开发的先后顺序 / Priority order for requirement development                                                           |
+| Privacy Compliance / 隐私合规                                        | 符合数据隐私相关法规 / Compliance with data privacy regulations                                                           |
+| Product Life Cycle (PLC) / 产品生命周期                              | 产品从诞生到退出市场的全过程 / Complete process from product birth to market exit                                         |
+| Product Requirement Document (PRD) / 需求文档                        | 产品需求说明书 / Product requirement specification document                                                               |
+| Project Initiation / 立项                                            | 产品或项目正式启动的过程 / Process of officially launching a product or project                                           |
+| Prometheus                                                           | Open-source monitoring and alerting system / 开源监控和告警系统                                                           |
+| Prompt                                                               | Input text or instruction given to AI models / 提供给AI模型的输入文本或指令                                               |
+| Prototype / 原型                                                     | 产品功能和界面初步设计稿 / Initial design draft of product features and interface                                         |
+| Public Cloud / 公有云                                                | Cloud services shared among multiple organizations / 多个组织共享的云服务                                                 |
+| Product Requirement Document (PRD) / 需求文档                        | 产品需求说明书 / Product requirement specification document                                                               |
+| Project Initiation / 立项                                            | 产品或项目正式启动的过程 / Process of officially launching a product or project                                           |
+| Prototype / 原型                                                     | 产品功能和界面初步设计稿 / Initial design draft of product features and interface                                         |
+| QA（Quality Assurance）                                              | 质量保证 / Quality assurance                                                                                              |
+| RAG (Retrieval-Augmented Generation)                                 | AI technique combining retrieval and generation / 结合检索和生成的AI技术                                                  |
+| Recommendation System / 智能推荐                                     | 基于数据和算法的个性化推荐 / Personalized recommendations based on data and algorithms                                    |
+| RBAC System (Role-Based Access Control) / RBAC系统                   | Security system that manages user permissions based on roles / 基于角色管理用户权限的安全系统                             |
+| Reinforcement Learning (RL) / 强化学习                               | 通过奖励机制训练智能体 / Training intelligent agents through reward mechanisms                                            |
+| Requirement Analysis / 需求分析                                      | 对用户需求进行收集、分析和整理 / Collection, analysis and organization of user requirements                               |
+| Requirement Review / 需求评审                                        | 对需求进行讨论和确认 / Discussion and confirmation of requirements                                                        |
+| Requirement Traceability / 需求跟踪                                  | Tracking of requirement implementation process / 需求实现过程的跟踪                                                       |
+| RESTful API                                                          | API endpoint based on REST architectural style / 基于REST架构风格的API接口                                                |
+| REST (Representational State Transfer) / REST                        | Web service architectural style for networked applications / 网络应用的Web服务架构风格                                    |
+| RPA (Robotic Process Automation) / 机器人流程自动化                  | Technology for automating business processes using software robots / 利用软件机器人自动化业务流程                         |
+| RTU (Remote Terminal Unit) / 远程终端单元                            | Electronic device for remote monitoring and control in industrial systems / 工业系统中用于远程监控和控制的电子设备        |
+| Retention Rate / 留存率                                              | 用户持续使用产品的比例 / Percentage of users who continue using the product                                               |
+| RLHF (Reinforcement Learning from Human Feedback) / 人类反馈强化学习 | Training AI models using human feedback to improve performance / 使用人类反馈训练AI模型以提升性能                         |
+| SCADA (Supervisory Control and Data Acquisition) / SCADA系统         | System for supervisory control and data acquisition in industrial environments / 工业环境中的监控与数据采集系统           |
+| SCM (Supply Chain Management) / 供应链管理                           | Management of the flow of goods and services / 对商品和服务流动的管理                                                     |
+| Space Coding / 空间编码                                              | Encoding method for spatial information in data transmission / 数据传输中空间信息的编码方法                               |
+| TCP/IP (Transmission Control Protocol/Internet Protocol) / TCP/IP    | Fundamental suite of communication protocols for the Internet / 互联网的基础通信协议组                                    |
+| Terminal Certificate / 终端证书                                      | Digital certificate for device authentication and security / 用于设备认证和安全的数字证书                                 |
+| Video Cloud / 视频云                                                 | Cloud platform for video storage, processing, and distribution / 用于视频存储、处理和分发的云平台                         |
+| Video Stream / 视频流                                                | Continuous transmission of video data over a network / 通过网络连续传输的视频数据                                         |
+| Roadmap / 路线图                                                     | 产品未来发展规划和时间表 / Product future development plan and timeline                                                   |
+| ROI（Return on Investment）                                          | 投资回报率 / Return on investment                                                                                         |
+| SaaS（Software as a Service） / 软件即服务                           | 软件即服务，云端交付模式 / Software as a service, cloud delivery model                                                    |
+| Scrum                                                                | 敏捷开发框架 / Agile development framework                                                                                |
+| SDK（Software Development Kit） / 软件开发工具包                     | Collection of software development tools for building applications / 用于构建应用程序的软件开发工具集合                   |
+| Self-Attention / 自注意力                                            | Mechanism allowing models to focus on relevant parts of input / 允许模型关注输入相关部分的机制                            |
+| Sensitive Word Probability / 敏感词概率                              | Probability of a word being identified as sensitive / 某词被判定为敏感词的概率                                            |
+| Slot Filling / 槽位填充                                              | Technology for automatically completing information in dialogs or forms / 在对话或表单中自动补全信息的技术                |
+| Smart Hardware / 智能硬件                                            | 具备智能功能的硬件设备 / Hardware devices with intelligent functions                                                      |
+| Spot GPU / 竞价型GPU                                                 | Cost-effective GPU instances with variable pricing / 定价灵活的经济型GPU实例                                              |
+| Sprint / 冲刺                                                        | Short iterative development cycle in agile methodology / 敏捷开发方法中的短期迭代开发周期                                 |
+| SQL Query / SQL查询                                                  | Data retrieval operations using Structured Query Language / 结构化查询语言的数据检索操作                                  |
+| SRS（Software Requirement Specification）                            | 软件需求规格说明 / Software requirement specification                                                                     |
+| Stepped Discount / 阶梯折扣                                          | Pricing model with discounts based on volume tiers / 基于数量层级的折扣定价模式                                           |
+| Technical Documentation / 技术文档                                   | 产品技术实现说明 / Technical implementation documentation                                                                 |
+| Test Case / 测试用例                                                 | 用于验证产品功能的测试场景 / Test scenarios for verifying product functions                                               |
+| UAT（User Acceptance Testing）                                       | 用户验收测试 / User acceptance testing                                                                                    |
+| User Experience (UX) / 用户体验                                      | 用户在使用产品过程中的整体感受 / Overall user experience when using products                                              |
+| User Interface (UI) / 用户界面                                       | 产品与用户交互的界面设计 / Interface design for product-user interaction                                                  |
+| User Journey / 用户旅程                                              | Complete process of user interaction with products / 用户与产品交互的完整流程                                             |
+| User Profile/Persona / 用户画像                                      | 对目标用户特征的抽象描述 / Abstract description of target user characteristics                                            |
+| User Research / 用户调研                                             | Research on target users / 对目标用户的调研                                                                               |
+| User Testing / 用户测试                                              | User participation in product testing / 让用户参与产品测试                                                                |
+| Vertical Domain / 垂直领域                                           | Specialized industry or market segment with specific needs / 具有特定需求的专业行业或细分市场                             |
+| Weekly Active Training Tasks / 周活训练任务数                        | Number of training tasks executed per week / 每周执行的训练任务数量                                                       |
 
 ---
+## 面试准备
+#### 关键词
+- 框架思考和创造力之间的平衡
